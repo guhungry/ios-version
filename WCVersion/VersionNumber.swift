@@ -46,11 +46,11 @@ public class VersionNumber {
 ////////////////////////
 extension VersionNumber : Comparable {
     public static func < (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        if lhs.MAJOR > rhs.MAJOR {
-            return false
+        if lhs.MAJOR != rhs.MAJOR {
+            return lhs.MAJOR < rhs.MAJOR
         }
-        if lhs.MINOR > rhs.MINOR {
-            return false
+        if lhs.MINOR != rhs.MINOR {
+            return lhs.MINOR < rhs.MINOR
         }
         return lhs.PATCH < rhs.PATCH
     }
@@ -60,11 +60,11 @@ extension VersionNumber : Comparable {
     }
 
     public static func > (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        if lhs.MAJOR < rhs.MAJOR {
-            return false
+        if lhs.MAJOR != rhs.MAJOR {
+            return lhs.MAJOR > rhs.MAJOR
         }
-        if lhs.MINOR < rhs.MINOR {
-            return false
+        if lhs.MINOR != rhs.MINOR {
+            return lhs.MINOR > rhs.MINOR
         }
         return lhs.PATCH > rhs.PATCH
     }
