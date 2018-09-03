@@ -12,7 +12,7 @@ before_install:
 script:
   - set -o pipefail
 
-  - xcodebuild clean build test -workspace WCVersion.xcworkspace -scheme WCExtensionsTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPad Air 2,OS=11.0" -configuration Debug GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+  - xcodebuild clean build test -workspace WCVersion.xcworkspace -scheme WCVersion -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPad Air 2,OS=11.0" -configuration Debug GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
