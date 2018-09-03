@@ -6,13 +6,13 @@
 import Foundation
 import WCExtensions
 
-class VersionNumber {
+public class VersionNumber {
     let version: String
     let MAJOR: Int
     let MINOR: Int
     let PATCH: Int
 
-    init(_ version: String) {
+    public init(_ version: String) {
         self.version = version
 
         let match = PATTERN.matches(self.version).first
@@ -45,7 +45,7 @@ class VersionNumber {
 // Compare VersionNumber
 ////////////////////////
 extension VersionNumber : Comparable {
-    static func < (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
+    public static func < (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
         if lhs.MAJOR > rhs.MAJOR {
             return false
         }
@@ -54,12 +54,12 @@ extension VersionNumber : Comparable {
         }
         return lhs.PATCH < rhs.PATCH
     }
-    
-    static func == (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
+
+    public static func == (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
         return lhs.MAJOR == rhs.MAJOR && lhs.MINOR == rhs.MINOR && lhs.PATCH == rhs.PATCH
     }
 
-    static func > (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
+    public static func > (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
         if lhs.MAJOR < rhs.MAJOR {
             return false
         }
