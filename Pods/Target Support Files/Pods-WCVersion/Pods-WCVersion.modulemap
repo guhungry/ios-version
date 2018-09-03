@@ -1,0 +1,6 @@
+framework module Pods_WCVersion {
+  umbrella header "Pods-WCVersion-umbrella.h"
+
+  export *
+  module * { export * }
+}

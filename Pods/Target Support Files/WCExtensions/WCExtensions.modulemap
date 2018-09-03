@@ -1,0 +1,6 @@
+framework module WCExtensions {
+  umbrella header "WCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
