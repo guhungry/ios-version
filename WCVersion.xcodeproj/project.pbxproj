@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7F410354213D28B60073EF6C /* WCVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F41034A213D28B50073EF6C /* WCVersion.framework */; };
-		7F410359213D28B60073EF6C /* WCVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F410358213D28B60073EF6C /* WCVersionTests.swift */; };
+		7F410359213D28B60073EF6C /* WCVersion.Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F410358213D28B60073EF6C /* WCVersion.Tests.swift */; };
 		7F410365213D2E400073EF6C /* VersionNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F410364213D2E400073EF6C /* VersionNumber.swift */; };
 		A742E6F0229A031456FF0783 /* Pods_WCVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E79977B307C3B55C3237E81 /* Pods_WCVersion.framework */; };
+		CCCAFDBF213DA75A008EEC46 /* WCVersionComparable.Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCAFDBE213DA75A008EEC46 /* WCVersionComparable.Tests.swift */; };
 		DAC40559A48066A24D49DDA5 /* Pods_WCVersionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07034F717CB6680937DE464 /* Pods_WCVersionTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,12 +31,13 @@
 		7F41034A213D28B50073EF6C /* WCVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F41034E213D28B50073EF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F410353213D28B60073EF6C /* WCVersionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCVersionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F410358213D28B60073EF6C /* WCVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCVersionTests.swift; sourceTree = "<group>"; };
+		7F410358213D28B60073EF6C /* WCVersion.Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCVersion.Tests.swift; sourceTree = "<group>"; };
 		7F41035A213D28B60073EF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F410364213D2E400073EF6C /* VersionNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionNumber.swift; sourceTree = "<group>"; };
 		93FD8729C7AAA32F9EC53526 /* Pods-WCVersionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCVersionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCVersionTests/Pods-WCVersionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E6535AABBF40B815E6387F /* Pods-WCVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCVersion.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCVersion/Pods-WCVersion.release.xcconfig"; sourceTree = "<group>"; };
 		C07034F717CB6680937DE464 /* Pods_WCVersionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCVersionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCAFDBE213DA75A008EEC46 /* WCVersionComparable.Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCVersionComparable.Tests.swift; sourceTree = "<group>"; };
 		F63FC65137E1AB0E859B089F /* Pods-WCVersionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCVersionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCVersionTests/Pods-WCVersionTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +114,8 @@
 		7F410357213D28B60073EF6C /* WCVersionTests */ = {
 			isa = PBXGroup;
 			children = (
-				7F410358213D28B60073EF6C /* WCVersionTests.swift */,
+				7F410358213D28B60073EF6C /* WCVersion.Tests.swift */,
+				CCCAFDBE213DA75A008EEC46 /* WCVersionComparable.Tests.swift */,
 				7F41035A213D28B60073EF6C /* Info.plist */,
 			);
 			path = WCVersionTests;
@@ -232,10 +235,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WCVersionTests/Pods-WCVersionTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftHamcrest/Hamcrest.framework",
 				"${BUILT_PRODUCTS_DIR}/WCExtensions/WCExtensions.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hamcrest.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCExtensions.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F410359213D28B60073EF6C /* WCVersionTests.swift in Sources */,
+				7F410359213D28B60073EF6C /* WCVersion.Tests.swift in Sources */,
+				CCCAFDBF213DA75A008EEC46 /* WCVersionComparable.Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
