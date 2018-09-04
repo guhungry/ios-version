@@ -1,18 +1,20 @@
 language: objective-c
-osx_image: xcode9
+osx_image: xcode9.4
 
 before_install:
   - env
   - locale
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - gem update cocoapods --no-rdoc --no-ri --no-document --quiet
   - xcpretty --version
   - xcodebuild -version
   - xcodebuild -showsdks
 
-script:
-  - set -o pipefail
-
-  - xcodebuild clean build test -workspace WCVersion.xcworkspace -scheme WCVersion -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPad Air 2,OS=11.0" -configuration Debug GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+script: ci/buildViaTravis.sh
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  
+env:
+  global:
+    secure: OCtrWwXkpzHxpQ7vZL1CRV4a+AtKdXsN43pYDWkGgdh1LCY0xz8viXn7PX3G/Z3PkAB8y6bc2bjPx9ty+71a7LmOSIFRErDjm3B07H4LtvwPOjFlr85ROFONjjbkuRmAutWUKOKCQFQwDUe9WfJNgnPH/oPtlISYchd1/gj6UIr2skMrvxEGtVrz8PG+pytrnDo0WmQvRRf0wGUndL2xlxb7Y25/mxsEe2NW8+iNDfdqybXu3sQDwQxKYamSGNnaASlJnOaeaOIJUl50A6Qw1MeG32MDt/zHpKoYzJhGZXBwvFcAenutD9/K3Ymoln7wUYO08ry7Y02vNxmciOfebLh5dDE+eH6GXgtku26XgTDhmkVT2YJ9JzJxjxqEdZc0YZBTao5ufsqR7/UBUIf3+ly3WBQBesXnP4/He02lh5TvAkya8/5LbyYrnqBnvm61O7q9rGxmA9Vy8LGujAsurlIvtn+KCnhBC/zuleahuzXZVmqXoX22HLZKgESqHyoH50/hl2vstIjayS5s7TCyOTbCYhi5VJf7iZsyAVNr6rGLuADScdsQ9KNLtTG+cl5APcuMzB5K6NWUiTiw4XHN8Q7Dl6rlKv2nIlS4QGRf71tdsiilVUlAwTstaLfDksovnHoTJH5AoelG1BESyNOFcwSHvVm1SVL/j5uRBbfWLek=
