@@ -25,16 +25,10 @@ public class VersionNumber {
     // Version Parser
     /////////////////
     private static func partFor(_ version: String, match: NSTextCheckingResult?, at: Int) -> Int {
-        guard let match = match else {
-            return 0
-        }
-        if match.numberOfRanges <= at {
-            return 0
-        }
+        guard let match = match else { return 0 }
+        guard at < match.numberOfRanges else { return 0 }
         let range = match.range(at: at)
-        if range.length == 0 {
-            return 0
-        }
+        guard range.length > 0 else { return 0 }
 
         return Int(version[range.lowerBound..<range.upperBound]) ?? 0
     }
@@ -48,6 +42,7 @@ extension VersionNumber : Comparable {
     public static func < (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
         guard lhs.MAJOR == rhs.MAJOR else { return lhs.MAJOR < rhs.MAJOR }
         guard lhs.MINOR == rhs.MINOR else { return lhs.MINOR < rhs.MINOR }
+        
         return lhs.PATCH < rhs.PATCH
     }
 
@@ -58,6 +53,7 @@ extension VersionNumber : Comparable {
     public static func > (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
         guard lhs.MAJOR == rhs.MAJOR else { return lhs.MAJOR > rhs.MAJOR }
         guard lhs.MINOR == rhs.MINOR else { return lhs.MINOR > rhs.MINOR }
+        
         return lhs.PATCH > rhs.PATCH
     }
 }
