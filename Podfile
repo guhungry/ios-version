@@ -13,5 +13,4 @@ target 'WCVersion' do
 
     pod 'SwiftHamcrest', '~> 2.0.0'
   end
-
 end

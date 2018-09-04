@@ -26,11 +26,10 @@ public class VersionNumber {
     /////////////////
     private static func partFor(_ version: String, match: NSTextCheckingResult?, at: Int) -> Int {
         guard let match = match else { return 0 }
-        guard at < match.numberOfRanges else { return 0 }
         let range = match.range(at: at)
         guard range.length > 0 else { return 0 }
 
-        return Int(version[range.lowerBound..<range.upperBound]) ?? 0
+        return version[range.lowerBound..<range.upperBound].toInt(or: 0)
     }
     private let PATTERN = Regex("^(\\d+)(\\.(\\d+))?(\\.(\\d+))?$")
 }

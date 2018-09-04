@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/guhungry/ios-version.git", :tag => "#{s.version}" }
   s.source_files  = "WCVersion/**/*.swift"
-  s.dependency "WCExtensions"
+  s.dependency "WCExtensions", '~> 0.0.5'
 
   s.swift_version = "4.2"
 end

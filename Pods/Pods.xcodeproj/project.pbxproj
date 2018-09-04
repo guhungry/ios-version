@@ -8,33 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		039AE64A9BF2DD7BFE2AC14F30D6FAA4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBDD60AB5EC0183A198A13D9A5D7BCE /* XCTest.framework */; };
-		195F1583DCA8493BAD302699B4C720AA /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CCDD5C1089E9742C55D1CB36DE1C0 /* Matcher.swift */; };
-		26716E5DB32236EB00F80CBD72962E8E /* MetaMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E0E35F65EACF37D2BBCA6F0E6D67B0 /* MetaMatchers.swift */; };
-		3A793D4429669C5F78810188FE81DAC2 /* OperatorMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417D8A3A09A60A42BA2255F6105B04C /* OperatorMatchers.swift */; };
-		3C6238FA93327B3E2B902A899B155C90 /* SwiftHamcrest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 248915C1ECD04FF0E1DA5CDF1DC6DE40 /* SwiftHamcrest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E2E28A3251C5458499BE34CC3BD5C32 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A68445EFF5DA2874EB650E2C26D6F /* Descriptions.swift */; };
-		3EB0C5ADD5E84CD4F74A534252D103BD /* WCExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 414D39ECD0A19755301C6E4EBB92D8A4 /* WCExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43FDEA6FD272E6A5333D36A6C7AA8971 /* ReflectionMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE702F9EE0B04199E5DC936A54D9B9 /* ReflectionMatchers.swift */; };
-		4C5B035CB255F9F8C6912ABE7D06487D /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BAA838BC3133110A472FFB3E92D79 /* UIImageExtension.swift */; };
+		0E1F3724B4BE88C26B2AD09362B18053 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C772E29F6573995350B284A7E0CB37BA /* Regex.swift */; };
+		195F1583DCA8493BAD302699B4C720AA /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19634DAEC575CFD58EB974F012FB9BC4 /* Matcher.swift */; };
+		26716E5DB32236EB00F80CBD72962E8E /* MetaMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF133F13B492FB66C764637AFB3D07C /* MetaMatchers.swift */; };
+		31B614C14C73B0B382E0F86D6B0F676A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68336770BEA3C5439C3DB273EF781BE9 /* StringExtension.swift */; };
+		3A793D4429669C5F78810188FE81DAC2 /* OperatorMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694AF99B6FEC6E0D03F380B0C4DD1D /* OperatorMatchers.swift */; };
+		3C6238FA93327B3E2B902A899B155C90 /* SwiftHamcrest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 866FBFB300A09CAFA75CAB60F83F8749 /* SwiftHamcrest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2E28A3251C5458499BE34CC3BD5C32 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE4F0E81B8E7B85E009B04309755E6 /* Descriptions.swift */; };
+		3EB0C5ADD5E84CD4F74A534252D103BD /* WCExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD04B66C4ADA1953C1C5ED5321C67D5 /* WCExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43FDEA6FD272E6A5333D36A6C7AA8971 /* ReflectionMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678CEA470FA8CF78E1A3A32A6CAB83C4 /* ReflectionMatchers.swift */; };
 		5423D7B1B222CA6696991DAF2C8B693C /* Pods-WCVersionTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4A8EEBCB6B07743B4C7348B0E3653B /* Pods-WCVersionTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57DE8B5A181AC178C9E56EC5B9FE4B2B /* Hamcrest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2345D81E4F4CAA1C9A88A2D73EA31F0 /* Hamcrest.swift */; };
+		57DE8B5A181AC178C9E56EC5B9FE4B2B /* Hamcrest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30ABFB2EC18EC8146CB3CCD66073267 /* Hamcrest.swift */; };
 		775D1B6CB541CB00AEA6C32B923B7F1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
-		78C66C6AA09C69E357143C34C9A06C61 /* BasicMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACD88D90C4A7F0CDB1E7DEDE9E8FA6 /* BasicMatchers.swift */; };
+		78C66C6AA09C69E357143C34C9A06C61 /* BasicMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CDE587BE6212DADB0BEB9D8B3E5C4F /* BasicMatchers.swift */; };
 		7985A51E61B67094EBA9084A4FCBC7ED /* Pods-WCVersionTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1457AF9E0A0A8F6118A9C69993964FBC /* Pods-WCVersionTests-dummy.m */; };
 		7A668D57151012330DDB44BD7A494E0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
 		7F3AB6DBDB802873A1FA25FB12BD0324 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
-		96BD11BFE46E397014ADEAC075F1AE6A /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741C256ECF088D5DC290403E6C40C4C3 /* Regex.swift */; };
-		9B2C414C1C61C7403928A4CC9A1E5545 /* ArithmeticMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EB58379B2BB40127137A998352BBE3 /* ArithmeticMatchers.swift */; };
+		87F4B84ED3F833BF59C01EC0EE498A65 /* WCExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223E8EE03D66A54FF9896BB0B76DC53 /* WCExtensions-dummy.m */; };
+		9B2C414C1C61C7403928A4CC9A1E5545 /* ArithmeticMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E18D0003D3C73F13BA4FFF254FFA9 /* ArithmeticMatchers.swift */; };
+		9CC8F9D1337EF434EC0017B638B32440 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A609DC80D9E61B6C465704D25FD02 /* OptionalExtension.swift */; };
 		9FB8277E23D8EB06A7FC2B582A71EBF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
-		A41E1B5FD4A966278840A99CEB25FD07 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6426529DB03D6742B6B21FD3DCE2D62 /* String.swift */; };
-		C063160EC6BEC621EDAACB47A1779175 /* DictionaryMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B935DE14078D7EF29CFAC250A497527 /* DictionaryMatchers.swift */; };
-		C078CAE4887DE966ED447DDD5F4F2F00 /* WCExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4DE50F0027680B073CFA3A6CB03E3F /* WCExtensions-dummy.m */; };
+		B11AEE3A10B2FBFF1DDE082989E7FECE /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A3604654F4B378826F94670AD8F0F /* UIImageExtension.swift */; };
+		C063160EC6BEC621EDAACB47A1779175 /* DictionaryMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBBA2A5AE078F113CB71A5FCE683DF /* DictionaryMatchers.swift */; };
+		C604D189458B7A6D36AED810064A21AF /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A412F61CB3AEC043A9A0B154FAB8E0 /* CollectionExtension.swift */; };
 		D2232529E17296EB26A3FCD85C5BB9F3 /* Pods-WCVersion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF595FE1C48DE57A1E36158526C565 /* Pods-WCVersion-dummy.m */; };
 		D4FECD81AC06E11278DC475778ACD547 /* Pods-WCVersion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB66F31C1BE2F312D6E1C69CB4DDA1D /* Pods-WCVersion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E58D3F2A2DEB8DEC985C392683DC9820 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB194A87C9F11C3968C14761445B95E2 /* MatchResult.swift */; };
-		ED459D07D4B990E1A56A3AC5355718E8 /* SwiftHamcrest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A705C5DD083C56D64AECA9109CF2A /* SwiftHamcrest-dummy.m */; };
-		F7D5DEB2B1889AC30C34AC8BB2DC3A44 /* StringMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EC8D8CC29FD4F6E07F3EC589BD53C /* StringMatchers.swift */; };
-		FB1B2D976683C79BD78A49DE1396CC63 /* SequenceMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23C71CCCD37B86D10B92FA5BD71AD9 /* SequenceMatchers.swift */; };
+		E58D3F2A2DEB8DEC985C392683DC9820 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFAD40E795F95B4ECA2BDEB0FE9074 /* MatchResult.swift */; };
+		ED459D07D4B990E1A56A3AC5355718E8 /* SwiftHamcrest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A48F932526048604029341B1C5CC9E /* SwiftHamcrest-dummy.m */; };
+		F7D5DEB2B1889AC30C34AC8BB2DC3A44 /* StringMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1FAA38DFB696B4340121A0A0DF7C5 /* StringMatchers.swift */; };
+		FB1B2D976683C79BD78A49DE1396CC63 /* SequenceMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55226336B6AAD5A9F9F1C86C86EBD71 /* SequenceMatchers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,57 +72,59 @@
 
 /* Begin PBXFileReference section */
 		00EB2F657A8211E8F73CFDA8B3E194C8 /* WCExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WCExtensions.framework; path = WCExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FFFAD40E795F95B4ECA2BDEB0FE9074 /* MatchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchResult.swift; path = Hamcrest/MatchResult.swift; sourceTree = "<group>"; };
 		11FABB71B14C58B88599B04F3E5A48D2 /* Pods-WCVersion-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WCVersion-acknowledgements.markdown"; sourceTree = "<group>"; };
+		137C2DB33C3286AF26705A4A9F7C75BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1457AF9E0A0A8F6118A9C69993964FBC /* Pods-WCVersionTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WCVersionTests-dummy.m"; sourceTree = "<group>"; };
+		153E18D0003D3C73F13BA4FFF254FFA9 /* ArithmeticMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArithmeticMatchers.swift; path = Hamcrest/ArithmeticMatchers.swift; sourceTree = "<group>"; };
+		15D1FAA38DFB696B4340121A0A0DF7C5 /* StringMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringMatchers.swift; path = Hamcrest/StringMatchers.swift; sourceTree = "<group>"; };
 		16E9EC074396082AE86963D5904D4265 /* Pods-WCVersion-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WCVersion-acknowledgements.plist"; sourceTree = "<group>"; };
-		175BF948FB832D739858E39108244128 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D4DE50F0027680B073CFA3A6CB03E3F /* WCExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCExtensions-dummy.m"; sourceTree = "<group>"; };
-		248915C1ECD04FF0E1DA5CDF1DC6DE40 /* SwiftHamcrest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-umbrella.h"; sourceTree = "<group>"; };
-		2C9A705C5DD083C56D64AECA9109CF2A /* SwiftHamcrest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHamcrest-dummy.m"; sourceTree = "<group>"; };
-		2E06AFB11306F796E61A087258517447 /* SwiftHamcrest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-prefix.pch"; sourceTree = "<group>"; };
-		2E6CCDD5C1089E9742C55D1CB36DE1C0 /* Matcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matcher.swift; path = Hamcrest/Matcher.swift; sourceTree = "<group>"; };
+		19634DAEC575CFD58EB974F012FB9BC4 /* Matcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matcher.swift; path = Hamcrest/Matcher.swift; sourceTree = "<group>"; };
+		3089CDBC7017FFDD613FE2F706C80BFD /* WCExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCExtensions-prefix.pch"; sourceTree = "<group>"; };
+		33E6941C819E74B9A7908690C6DBC5F5 /* SwiftHamcrest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-prefix.pch"; sourceTree = "<group>"; };
 		36B49B61C52C40BB7E5D94F69D825967 /* Pods-WCVersionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCVersionTests.release.xcconfig"; sourceTree = "<group>"; };
 		3ABF595FE1C48DE57A1E36158526C565 /* Pods-WCVersion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WCVersion-dummy.m"; sourceTree = "<group>"; };
 		3FBDD60AB5EC0183A198A13D9A5D7BCE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		414D39ECD0A19755301C6E4EBB92D8A4 /* WCExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCExtensions-umbrella.h"; sourceTree = "<group>"; };
-		538A68445EFF5DA2874EB650E2C26D6F /* Descriptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Descriptions.swift; path = Hamcrest/Descriptions.swift; sourceTree = "<group>"; };
+		44A48F932526048604029341B1C5CC9E /* SwiftHamcrest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHamcrest-dummy.m"; sourceTree = "<group>"; };
+		57A412F61CB3AEC043A9A0B154FAB8E0 /* CollectionExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionExtension.swift; path = WCExtensions/CollectionExtension.swift; sourceTree = "<group>"; };
+		5B4A609DC80D9E61B6C465704D25FD02 /* OptionalExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalExtension.swift; path = WCExtensions/OptionalExtension.swift; sourceTree = "<group>"; };
 		5C4A8EEBCB6B07743B4C7348B0E3653B /* Pods-WCVersionTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WCVersionTests-umbrella.h"; sourceTree = "<group>"; };
 		645CA9EF50F1855603CD0D35F2B8727E /* Hamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hamcrest.framework; path = SwiftHamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		689791178383EFCAC8899D23722CA9F1 /* SwiftHamcrest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHamcrest.modulemap; sourceTree = "<group>"; };
+		67104D5A7E122E6BFF6ECAAB9FC7CC1D /* SwiftHamcrest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHamcrest.modulemap; sourceTree = "<group>"; };
+		678CEA470FA8CF78E1A3A32A6CAB83C4 /* ReflectionMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectionMatchers.swift; path = Hamcrest/ReflectionMatchers.swift; sourceTree = "<group>"; };
+		68336770BEA3C5439C3DB273EF781BE9 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = WCExtensions/StringExtension.swift; sourceTree = "<group>"; };
 		6B4ED47B5E3700F308B7FAA180D0DCFA /* Pods-WCVersionTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WCVersionTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6D23C71CCCD37B86D10B92FA5BD71AD9 /* SequenceMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SequenceMatchers.swift; path = Hamcrest/SequenceMatchers.swift; sourceTree = "<group>"; };
-		741C256ECF088D5DC290403E6C40C4C3 /* Regex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = WCExtensions/Wrappers/Regex.swift; sourceTree = "<group>"; };
-		7B935DE14078D7EF29CFAC250A497527 /* DictionaryMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryMatchers.swift; path = Hamcrest/DictionaryMatchers.swift; sourceTree = "<group>"; };
-		8417D8A3A09A60A42BA2255F6105B04C /* OperatorMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorMatchers.swift; path = Hamcrest/OperatorMatchers.swift; sourceTree = "<group>"; };
-		89D01E98FAD3850632FF494E69C7A6DA /* WCExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WCExtensions.modulemap; sourceTree = "<group>"; };
-		8AED318E026173036EF7C0585F129453 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CE4F0E81B8E7B85E009B04309755E6 /* Descriptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Descriptions.swift; path = Hamcrest/Descriptions.swift; sourceTree = "<group>"; };
+		78BE2E47671BBE73F9B024F6E8F6A4F6 /* WCExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WCExtensions.modulemap; sourceTree = "<group>"; };
+		8223E8EE03D66A54FF9896BB0B76DC53 /* WCExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCExtensions-dummy.m"; sourceTree = "<group>"; };
+		858A3604654F4B378826F94670AD8F0F /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = WCExtensions/UIImageExtension.swift; sourceTree = "<group>"; };
+		866FBFB300A09CAFA75CAB60F83F8749 /* SwiftHamcrest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-umbrella.h"; sourceTree = "<group>"; };
 		9320B7CDD40F890945C3CB0DB547A0D9 /* Pods-WCVersionTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WCVersionTests-frameworks.sh"; sourceTree = "<group>"; };
+		93694AF99B6FEC6E0D03F380B0C4DD1D /* OperatorMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorMatchers.swift; path = Hamcrest/OperatorMatchers.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9ABDFFCBB5E4B566776C27BFEAD6EE65 /* SwiftHamcrest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHamcrest.xcconfig; sourceTree = "<group>"; };
 		A0F2D145277689B55C4C0FB633BCA065 /* Pods-WCVersionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCVersionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A119C59967B7C66FC539CD269DB7796F /* Pods_WCVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WCVersion.framework; path = "Pods-WCVersion.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2345D81E4F4CAA1C9A88A2D73EA31F0 /* Hamcrest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hamcrest.swift; path = Hamcrest/Hamcrest.swift; sourceTree = "<group>"; };
 		A335B7A532624786FE1F8D573EB2A5DB /* Pods-WCVersion-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WCVersion-resources.sh"; sourceTree = "<group>"; };
-		A6426529DB03D6742B6B21FD3DCE2D62 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = WCExtensions/String.swift; sourceTree = "<group>"; };
 		AB12B0B082FF0B76AC0FAF3877823FA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4DF442964049057FB5935B472A9D96 /* Pods-WCVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCVersion.release.xcconfig"; sourceTree = "<group>"; };
-		AD9BAA838BC3133110A472FFB3E92D79 /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = WCExtensions/UIImageExtension.swift; sourceTree = "<group>"; };
-		AFAE702F9EE0B04199E5DC936A54D9B9 /* ReflectionMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectionMatchers.swift; path = Hamcrest/ReflectionMatchers.swift; sourceTree = "<group>"; };
-		B1EB58379B2BB40127137A998352BBE3 /* ArithmeticMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArithmeticMatchers.swift; path = Hamcrest/ArithmeticMatchers.swift; sourceTree = "<group>"; };
+		ADD04B66C4ADA1953C1C5ED5321C67D5 /* WCExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCExtensions-umbrella.h"; sourceTree = "<group>"; };
+		B13E25AA6763E7CCCF51576CD227E75E /* WCExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCExtensions.xcconfig; sourceTree = "<group>"; };
 		B5B611618AF258676A8D9EF4BBE05701 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCC48E9B578AEE257D857D5F6EE1AC3C /* Pods-WCVersion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCVersion.debug.xcconfig"; sourceTree = "<group>"; };
-		C1E0E35F65EACF37D2BBCA6F0E6D67B0 /* MetaMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetaMatchers.swift; path = Hamcrest/MetaMatchers.swift; sourceTree = "<group>"; };
-		CA3D72FD60C51FE044EC816B09ACFA20 /* WCExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCExtensions-prefix.pch"; sourceTree = "<group>"; };
+		BE68ECFCD75B1386315C2E0C188FA456 /* SwiftHamcrest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHamcrest.xcconfig; sourceTree = "<group>"; };
+		C55226336B6AAD5A9F9F1C86C86EBD71 /* SequenceMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SequenceMatchers.swift; path = Hamcrest/SequenceMatchers.swift; sourceTree = "<group>"; };
+		C772E29F6573995350B284A7E0CB37BA /* Regex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = WCExtensions/Wrappers/Regex.swift; sourceTree = "<group>"; };
 		CCB9F92B6F6F630EABBC2574C720314E /* Pods-WCVersionTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WCVersionTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCF133F13B492FB66C764637AFB3D07C /* MetaMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetaMatchers.swift; path = Hamcrest/MetaMatchers.swift; sourceTree = "<group>"; };
 		D0C207FB2BACBCCCD98D122029613C83 /* Pods-WCVersionTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WCVersionTests-resources.sh"; sourceTree = "<group>"; };
+		D2DBBA2A5AE078F113CB71A5FCE683DF /* DictionaryMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryMatchers.swift; path = Hamcrest/DictionaryMatchers.swift; sourceTree = "<group>"; };
+		D30ABFB2EC18EC8146CB3CCD66073267 /* Hamcrest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hamcrest.swift; path = Hamcrest/Hamcrest.swift; sourceTree = "<group>"; };
+		D5CDE587BE6212DADB0BEB9D8B3E5C4F /* BasicMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicMatchers.swift; path = Hamcrest/BasicMatchers.swift; sourceTree = "<group>"; };
 		DA811666054A9E2BA2C077EA3CBB45B6 /* Pods_WCVersionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WCVersionTests.framework; path = "Pods-WCVersionTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE5EC8D8CC29FD4F6E07F3EC589BD53C /* StringMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringMatchers.swift; path = Hamcrest/StringMatchers.swift; sourceTree = "<group>"; };
 		E25FC41ABEED986E18BD834382C4F93E /* Pods-WCVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WCVersion.modulemap"; sourceTree = "<group>"; };
 		E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EB194A87C9F11C3968C14761445B95E2 /* MatchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchResult.swift; path = Hamcrest/MatchResult.swift; sourceTree = "<group>"; };
 		F3274CA065186BBE5252AAFD84CBE86C /* Pods-WCVersionTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WCVersionTests.modulemap"; sourceTree = "<group>"; };
-		F7ACD88D90C4A7F0CDB1E7DEDE9E8FA6 /* BasicMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicMatchers.swift; path = Hamcrest/BasicMatchers.swift; sourceTree = "<group>"; };
-		F96A5B3614AC49CC800E04AD34CB3621 /* WCExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCExtensions.xcconfig; sourceTree = "<group>"; };
+		FA473C831C73C3CF54322B33E7E5996B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCB66F31C1BE2F312D6E1C69CB4DDA1D /* Pods-WCVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WCVersion-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +165,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		129C6B68AB60B8493418B6E00ED2A626 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F300B1975B907156D1FC19C8FF555A34 /* SwiftHamcrest */,
+				281F3DEEB9E77CB053EF4B1DA3676911 /* WCExtensions */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		281F3DEEB9E77CB053EF4B1DA3676911 /* WCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				57A412F61CB3AEC043A9A0B154FAB8E0 /* CollectionExtension.swift */,
+				5B4A609DC80D9E61B6C465704D25FD02 /* OptionalExtension.swift */,
+				C772E29F6573995350B284A7E0CB37BA /* Regex.swift */,
+				68336770BEA3C5439C3DB273EF781BE9 /* StringExtension.swift */,
+				858A3604654F4B378826F94670AD8F0F /* UIImageExtension.swift */,
+				BFC9A150AE2E61D013022D46AFAAF39E /* Support Files */,
+			);
+			name = WCExtensions;
+			path = WCExtensions;
+			sourceTree = "<group>";
+		};
 		3288CC869B922F77D0B35B9E5440771E /* Pods-WCVersion */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,20 +213,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		437293041E58357FEE7890E919E21AF0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				175BF948FB832D739858E39108244128 /* Info.plist */,
-				689791178383EFCAC8899D23722CA9F1 /* SwiftHamcrest.modulemap */,
-				9ABDFFCBB5E4B566776C27BFEAD6EE65 /* SwiftHamcrest.xcconfig */,
-				2C9A705C5DD083C56D64AECA9109CF2A /* SwiftHamcrest-dummy.m */,
-				2E06AFB11306F796E61A087258517447 /* SwiftHamcrest-prefix.pch */,
-				248915C1ECD04FF0E1DA5CDF1DC6DE40 /* SwiftHamcrest-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftHamcrest";
-			sourceTree = "<group>";
-		};
 		5CCEB25ADEB09162B939A2A71F36AC55 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,18 +220,6 @@
 				FC730B3CE91D85BE6A11F14BC1946D14 /* Pods-WCVersionTests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		64998317F69776236AE8B56C588CC3B2 /* WCExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				741C256ECF088D5DC290403E6C40C4C3 /* Regex.swift */,
-				A6426529DB03D6742B6B21FD3DCE2D62 /* String.swift */,
-				AD9BAA838BC3133110A472FFB3E92D79 /* UIImageExtension.swift */,
-				E4AFFF079395ED08D8E6AE847245834A /* Support Files */,
-			);
-			name = WCExtensions;
-			path = WCExtensions;
 			sourceTree = "<group>";
 		};
 		7BE34EE7067F7CC8A54539A282682749 /* iOS */ = {
@@ -235,31 +236,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				C5CB5D6631BD0AFA18D9A2D3DD738CB3 /* Pods */,
+				129C6B68AB60B8493418B6E00ED2A626 /* Pods */,
 				BB1C6ACA21AB9093BF37C2B0B89DCB61 /* Products */,
 				5CCEB25ADEB09162B939A2A71F36AC55 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9426DC6BFF21F51C98505F63E6799552 /* SwiftHamcrest */ = {
-			isa = PBXGroup;
-			children = (
-				B1EB58379B2BB40127137A998352BBE3 /* ArithmeticMatchers.swift */,
-				F7ACD88D90C4A7F0CDB1E7DEDE9E8FA6 /* BasicMatchers.swift */,
-				538A68445EFF5DA2874EB650E2C26D6F /* Descriptions.swift */,
-				7B935DE14078D7EF29CFAC250A497527 /* DictionaryMatchers.swift */,
-				A2345D81E4F4CAA1C9A88A2D73EA31F0 /* Hamcrest.swift */,
-				2E6CCDD5C1089E9742C55D1CB36DE1C0 /* Matcher.swift */,
-				EB194A87C9F11C3968C14761445B95E2 /* MatchResult.swift */,
-				C1E0E35F65EACF37D2BBCA6F0E6D67B0 /* MetaMatchers.swift */,
-				8417D8A3A09A60A42BA2255F6105B04C /* OperatorMatchers.swift */,
-				AFAE702F9EE0B04199E5DC936A54D9B9 /* ReflectionMatchers.swift */,
-				6D23C71CCCD37B86D10B92FA5BD71AD9 /* SequenceMatchers.swift */,
-				DE5EC8D8CC29FD4F6E07F3EC589BD53C /* StringMatchers.swift */,
-				437293041E58357FEE7890E919E21AF0 /* Support Files */,
-			);
-			name = SwiftHamcrest;
-			path = SwiftHamcrest;
 			sourceTree = "<group>";
 		};
 		BB1C6ACA21AB9093BF37C2B0B89DCB61 /* Products */ = {
@@ -273,27 +253,53 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5CB5D6631BD0AFA18D9A2D3DD738CB3 /* Pods */ = {
+		BFC9A150AE2E61D013022D46AFAAF39E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9426DC6BFF21F51C98505F63E6799552 /* SwiftHamcrest */,
-				64998317F69776236AE8B56C588CC3B2 /* WCExtensions */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E4AFFF079395ED08D8E6AE847245834A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8AED318E026173036EF7C0585F129453 /* Info.plist */,
-				89D01E98FAD3850632FF494E69C7A6DA /* WCExtensions.modulemap */,
-				F96A5B3614AC49CC800E04AD34CB3621 /* WCExtensions.xcconfig */,
-				1D4DE50F0027680B073CFA3A6CB03E3F /* WCExtensions-dummy.m */,
-				CA3D72FD60C51FE044EC816B09ACFA20 /* WCExtensions-prefix.pch */,
-				414D39ECD0A19755301C6E4EBB92D8A4 /* WCExtensions-umbrella.h */,
+				FA473C831C73C3CF54322B33E7E5996B /* Info.plist */,
+				78BE2E47671BBE73F9B024F6E8F6A4F6 /* WCExtensions.modulemap */,
+				B13E25AA6763E7CCCF51576CD227E75E /* WCExtensions.xcconfig */,
+				8223E8EE03D66A54FF9896BB0B76DC53 /* WCExtensions-dummy.m */,
+				3089CDBC7017FFDD613FE2F706C80BFD /* WCExtensions-prefix.pch */,
+				ADD04B66C4ADA1953C1C5ED5321C67D5 /* WCExtensions-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/WCExtensions";
+			sourceTree = "<group>";
+		};
+		DA02400A2D28505BD57A76BA9788C0D8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				137C2DB33C3286AF26705A4A9F7C75BF /* Info.plist */,
+				67104D5A7E122E6BFF6ECAAB9FC7CC1D /* SwiftHamcrest.modulemap */,
+				BE68ECFCD75B1386315C2E0C188FA456 /* SwiftHamcrest.xcconfig */,
+				44A48F932526048604029341B1C5CC9E /* SwiftHamcrest-dummy.m */,
+				33E6941C819E74B9A7908690C6DBC5F5 /* SwiftHamcrest-prefix.pch */,
+				866FBFB300A09CAFA75CAB60F83F8749 /* SwiftHamcrest-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftHamcrest";
+			sourceTree = "<group>";
+		};
+		F300B1975B907156D1FC19C8FF555A34 /* SwiftHamcrest */ = {
+			isa = PBXGroup;
+			children = (
+				153E18D0003D3C73F13BA4FFF254FFA9 /* ArithmeticMatchers.swift */,
+				D5CDE587BE6212DADB0BEB9D8B3E5C4F /* BasicMatchers.swift */,
+				71CE4F0E81B8E7B85E009B04309755E6 /* Descriptions.swift */,
+				D2DBBA2A5AE078F113CB71A5FCE683DF /* DictionaryMatchers.swift */,
+				D30ABFB2EC18EC8146CB3CCD66073267 /* Hamcrest.swift */,
+				19634DAEC575CFD58EB974F012FB9BC4 /* Matcher.swift */,
+				0FFFAD40E795F95B4ECA2BDEB0FE9074 /* MatchResult.swift */,
+				CCF133F13B492FB66C764637AFB3D07C /* MetaMatchers.swift */,
+				93694AF99B6FEC6E0D03F380B0C4DD1D /* OperatorMatchers.swift */,
+				678CEA470FA8CF78E1A3A32A6CAB83C4 /* ReflectionMatchers.swift */,
+				C55226336B6AAD5A9F9F1C86C86EBD71 /* SequenceMatchers.swift */,
+				15D1FAA38DFB696B4340121A0A0DF7C5 /* StringMatchers.swift */,
+				DA02400A2D28505BD57A76BA9788C0D8 /* Support Files */,
+			);
+			name = SwiftHamcrest;
+			path = SwiftHamcrest;
 			sourceTree = "<group>";
 		};
 		FC730B3CE91D85BE6A11F14BC1946D14 /* Pods-WCVersionTests */ = {
@@ -411,7 +417,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB706075485288609FDF4D1DB1F62210 /* Build configuration list for PBXNativeTarget "WCExtensions" */;
 			buildPhases = (
-				493B068CFBF850ABDECEE1BDD43EC234 /* Sources */,
+				2B7EE864A883571E73C1978310DE0CBE /* Sources */,
 				12A88E65FB412CCC2D894D12F591967D /* Frameworks */,
 				90FECB3B21FAFAEF21AE86545B95A986 /* Headers */,
 			);
@@ -462,14 +468,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		493B068CFBF850ABDECEE1BDD43EC234 /* Sources */ = {
+		2B7EE864A883571E73C1978310DE0CBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96BD11BFE46E397014ADEAC075F1AE6A /* Regex.swift in Sources */,
-				A41E1B5FD4A966278840A99CEB25FD07 /* String.swift in Sources */,
-				4C5B035CB255F9F8C6912ABE7D06487D /* UIImageExtension.swift in Sources */,
-				C078CAE4887DE966ED447DDD5F4F2F00 /* WCExtensions-dummy.m in Sources */,
+				C604D189458B7A6D36AED810064A21AF /* CollectionExtension.swift in Sources */,
+				9CC8F9D1337EF434EC0017B638B32440 /* OptionalExtension.swift in Sources */,
+				0E1F3724B4BE88C26B2AD09362B18053 /* Regex.swift in Sources */,
+				31B614C14C73B0B382E0F86D6B0F676A /* StringExtension.swift in Sources */,
+				B11AEE3A10B2FBFF1DDE082989E7FECE /* UIImageExtension.swift in Sources */,
+				87F4B84ED3F833BF59C01EC0EE498A65 /* WCExtensions-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +541,7 @@
 /* Begin XCBuildConfiguration section */
 		0403BCB409B6EFD12D12F474395F695B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F96A5B3614AC49CC800E04AD34CB3621 /* WCExtensions.xcconfig */;
+			baseConfigurationReference = B13E25AA6763E7CCCF51576CD227E75E /* WCExtensions.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -664,7 +672,7 @@
 		};
 		214D8C3208D8DEAA2BEC644E9708D8FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9ABDFFCBB5E4B566776C27BFEAD6EE65 /* SwiftHamcrest.xcconfig */;
+			baseConfigurationReference = BE68ECFCD75B1386315C2E0C188FA456 /* SwiftHamcrest.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -697,7 +705,7 @@
 		};
 		2E2A945D8D4D8B6C0F9E6709DF425DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9ABDFFCBB5E4B566776C27BFEAD6EE65 /* SwiftHamcrest.xcconfig */;
+			baseConfigurationReference = BE68ECFCD75B1386315C2E0C188FA456 /* SwiftHamcrest.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -764,7 +772,7 @@
 		};
 		6141C4E7F8A681DCD2D1214BBAF15B82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F96A5B3614AC49CC800E04AD34CB3621 /* WCExtensions.xcconfig */;
+			baseConfigurationReference = B13E25AA6763E7CCCF51576CD227E75E /* WCExtensions.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
