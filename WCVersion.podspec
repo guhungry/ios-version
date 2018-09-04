@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "WCVersion"
-  s.version      = "0.0.2"
+  s.version      = "0.0.4"
   s.summary      = "Simple version number compare in MAJOR(.MINOR)?(.PATCH)? format"
   s.description  = <<-DESC
   Simple version number compare in MAJOR(.MINOR)?(.PATCH)? format written in swift
