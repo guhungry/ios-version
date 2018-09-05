@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode9.4
+osx_image: xcode9
 
 before_install:
   - env
@@ -14,7 +14,7 @@ script: ci/buildViaTravis.sh
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  
+
 env:
   global:
     secure: OCtrWwXkpzHxpQ7vZL1CRV4a+AtKdXsN43pYDWkGgdh1LCY0xz8viXn7PX3G/Z3PkAB8y6bc2bjPx9ty+71a7LmOSIFRErDjm3B07H4LtvwPOjFlr85ROFONjjbkuRmAutWUKOKCQFQwDUe9WfJNgnPH/oPtlISYchd1/gj6UIr2skMrvxEGtVrz8PG+pytrnDo0WmQvRRf0wGUndL2xlxb7Y25/mxsEe2NW8+iNDfdqybXu3sQDwQxKYamSGNnaASlJnOaeaOIJUl50A6Qw1MeG32MDt/zHpKoYzJhGZXBwvFcAenutD9/K3Ymoln7wUYO08ry7Y02vNxmciOfebLh5dDE+eH6GXgtku26XgTDhmkVT2YJ9JzJxjxqEdZc0YZBTao5ufsqR7/UBUIf3+ly3WBQBesXnP4/He02lh5TvAkya8/5LbyYrnqBnvm61O7q9rGxmA9Vy8LGujAsurlIvtn+KCnhBC/zuleahuzXZVmqXoX22HLZKgESqHyoH50/hl2vstIjayS5s7TCyOTbCYhi5VJf7iZsyAVNr6rGLuADScdsQ9KNLtTG+cl5APcuMzB5K6NWUiTiw4XHN8Q7Dl6rlKv2nIlS4QGRf71tdsiilVUlAwTstaLfDksovnHoTJH5AoelG1BESyNOFcwSHvVm1SVL/j5uRBbfWLek=
