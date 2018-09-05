@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F70ABB8213F75BB002B725A"
+               BuildableName = "WCVersion.framework"
+               BlueprintName = "WCVersion"
+               ReferencedContainer = "container:WCVersion.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F70ABC1213F75BB002B725A"
                BuildableName = "WCVersionTests.xctest"
                BlueprintName = "WCVersionTests"
@@ -29,23 +43,13 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F70ABC1213F75BB002B725A"
-               BuildableName = "WCVersionTests.xctest"
-               BlueprintName = "WCVersionTests"
-               ReferencedContainer = "container:WCVersion.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7F70ABC1213F75BB002B725A"
-            BuildableName = "WCVersionTests.xctest"
-            BlueprintName = "WCVersionTests"
+            BlueprintIdentifier = "7F70ABB8213F75BB002B725A"
+            BuildableName = "WCVersion.framework"
+            BlueprintName = "WCVersion"
             ReferencedContainer = "container:WCVersion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +69,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7F70ABC1213F75BB002B725A"
-            BuildableName = "WCVersionTests.xctest"
-            BlueprintName = "WCVersionTests"
+            BlueprintIdentifier = "7F70ABB8213F75BB002B725A"
+            BuildableName = "WCVersion.framework"
+            BlueprintName = "WCVersion"
             ReferencedContainer = "container:WCVersion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +87,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7F70ABC1213F75BB002B725A"
-            BuildableName = "WCVersionTests.xctest"
-            BlueprintName = "WCVersionTests"
+            BlueprintIdentifier = "7F70ABB8213F75BB002B725A"
+            BuildableName = "WCVersion.framework"
+            BlueprintName = "WCVersion"
             ReferencedContainer = "container:WCVersion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
