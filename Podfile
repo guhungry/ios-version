@@ -5,8 +5,7 @@ target 'WCVersion' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for WCVersion
-  pod 'WCExtensions', '~> 0.0'
+  pod 'WCExtensions', '~> 0.0.5'
 
   target 'WCVersionTests' do
     inherit! :search_paths
