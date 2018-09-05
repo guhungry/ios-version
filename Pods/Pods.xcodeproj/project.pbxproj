@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -71,7 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00EB2F657A8211E8F73CFDA8B3E194C8 /* WCExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EB2F657A8211E8F73CFDA8B3E194C8 /* WCExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WCExtensions.framework; path = WCExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFFAD40E795F95B4ECA2BDEB0FE9074 /* MatchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchResult.swift; path = Hamcrest/MatchResult.swift; sourceTree = "<group>"; };
 		11FABB71B14C58B88599B04F3E5A48D2 /* Pods-WCVersion-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WCVersion-acknowledgements.markdown"; sourceTree = "<group>"; };
 		137C2DB33C3286AF26705A4A9F7C75BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		57A412F61CB3AEC043A9A0B154FAB8E0 /* CollectionExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionExtension.swift; path = WCExtensions/CollectionExtension.swift; sourceTree = "<group>"; };
 		5B4A609DC80D9E61B6C465704D25FD02 /* OptionalExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalExtension.swift; path = WCExtensions/OptionalExtension.swift; sourceTree = "<group>"; };
 		5C4A8EEBCB6B07743B4C7348B0E3653B /* Pods-WCVersionTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WCVersionTests-umbrella.h"; sourceTree = "<group>"; };
-		645CA9EF50F1855603CD0D35F2B8727E /* Hamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		645CA9EF50F1855603CD0D35F2B8727E /* Hamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hamcrest.framework; path = SwiftHamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67104D5A7E122E6BFF6ECAAB9FC7CC1D /* SwiftHamcrest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHamcrest.modulemap; sourceTree = "<group>"; };
 		678CEA470FA8CF78E1A3A32A6CAB83C4 /* ReflectionMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectionMatchers.swift; path = Hamcrest/ReflectionMatchers.swift; sourceTree = "<group>"; };
 		68336770BEA3C5439C3DB273EF781BE9 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = WCExtensions/StringExtension.swift; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		866FBFB300A09CAFA75CAB60F83F8749 /* SwiftHamcrest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHamcrest-umbrella.h"; sourceTree = "<group>"; };
 		9320B7CDD40F890945C3CB0DB547A0D9 /* Pods-WCVersionTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WCVersionTests-frameworks.sh"; sourceTree = "<group>"; };
 		93694AF99B6FEC6E0D03F380B0C4DD1D /* OperatorMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorMatchers.swift; path = Hamcrest/OperatorMatchers.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0F2D145277689B55C4C0FB633BCA065 /* Pods-WCVersionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCVersionTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A119C59967B7C66FC539CD269DB7796F /* Pods_WCVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A119C59967B7C66FC539CD269DB7796F /* Pods_WCVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WCVersion.framework; path = "Pods-WCVersion.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A335B7A532624786FE1F8D573EB2A5DB /* Pods-WCVersion-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WCVersion-resources.sh"; sourceTree = "<group>"; };
 		AB12B0B082FF0B76AC0FAF3877823FA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4DF442964049057FB5935B472A9D96 /* Pods-WCVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCVersion.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		D2DBBA2A5AE078F113CB71A5FCE683DF /* DictionaryMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryMatchers.swift; path = Hamcrest/DictionaryMatchers.swift; sourceTree = "<group>"; };
 		D30ABFB2EC18EC8146CB3CCD66073267 /* Hamcrest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hamcrest.swift; path = Hamcrest/Hamcrest.swift; sourceTree = "<group>"; };
 		D5CDE587BE6212DADB0BEB9D8B3E5C4F /* BasicMatchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicMatchers.swift; path = Hamcrest/BasicMatchers.swift; sourceTree = "<group>"; };
-		DA811666054A9E2BA2C077EA3CBB45B6 /* Pods_WCVersionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCVersionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA811666054A9E2BA2C077EA3CBB45B6 /* Pods_WCVersionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WCVersionTests.framework; path = "Pods-WCVersionTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25FC41ABEED986E18BD834382C4F93E /* Pods-WCVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WCVersion.modulemap"; sourceTree = "<group>"; };
 		E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F3274CA065186BBE5252AAFD84CBE86C /* Pods-WCVersionTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WCVersionTests.modulemap"; sourceTree = "<group>"; };
@@ -184,6 +184,7 @@
 				858A3604654F4B378826F94670AD8F0F /* UIImageExtension.swift */,
 				BFC9A150AE2E61D013022D46AFAAF39E /* Support Files */,
 			);
+			name = WCExtensions;
 			path = WCExtensions;
 			sourceTree = "<group>";
 		};
@@ -297,6 +298,7 @@
 				15D1FAA38DFB696B4340121A0A0DF7C5 /* StringMatchers.swift */,
 				DA02400A2D28505BD57A76BA9788C0D8 /* Support Files */,
 			);
+			name = SwiftHamcrest;
 			path = SwiftHamcrest;
 			sourceTree = "<group>";
 		};
@@ -435,7 +437,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -924,7 +926,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
