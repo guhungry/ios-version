@@ -17,3 +17,5 @@ else
   set -o pipefail
   xcodebuild clean build test -workspace WCVersion.xcworkspace -scheme WCVersionTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPad Air 2,OS=11.0" -configuration Debug GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
 fi
+
+./xccov-to-sonarqube-generic.sh ~/Library/Developer/Xcode/DerivedData/*/Logs/Test/*.xccovarchive/ > sonarqube-generic-coverage.xml

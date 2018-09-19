@@ -1,6 +1,12 @@
 language: objective-c
 osx_image: xcode9
 
+addons:
+  sonarcloud:
+    organization: "guhungry-github"
+    token:
+      secure: LgH4gR0DS1nvPpdaqGUn0JnWOSuQr4MjLUgVDXIHTYIgFhAgMehR1rlzlNS4LCeF5evTi1loQNWcI5puaG3DNbiIUr+GItdvnWYW5erEq2W0gMMhd+GdzZnqXFxSZu9Jp1vE/1fdErxX+uHUfYgq8JoixkrNuIn6MWxQ5AeYfiNqj3rRfPvt89FX4gniYsbWe364TRkRx+3d/h0vdCaEhepJZLV5CZy+hYsRiAV96KQb1OVLzsemUxayhH3/gxmeLK0NBtGg9XpHTAkXQULtyU/O3+z/XXaxToKn8tgkgdKO/iADKy1DQFsXLHljY0DeDF5jk9ctWnhmSWgn5MNPXFSCthiYXUZaUVVLbIPTmzgomSCBCQzp9NFd7UYXm2VZ93rLe1afiJjg1oEL8EmCaNfGYvq6yoCSHaXCUMWdROulP4h2RNtEUqzgVbyFcBtuVMGbjvNiiUZH2rYUHL6y7bHHovcqx9LYxU8mfJlP9K0gqQMRT9g6kFQ1WAvAtDZk7k8LPQXD7fC/SFE2eUEIURc5B7osHdVPal/6fPykJUhtPiR4O/rZr8SnMubjgGBsdUPczdAmr7j2zR41ogMyTL4U2I0K/Hvk1Ie5+6vHyuS9/BG8x1GBLI+OfvXD+9rin6b73bdt2ga2tHQAkIHoDaFbKNjBliENdNYRnpFEJrg=
+
 before_install:
   - env
   - locale
@@ -10,7 +16,9 @@ before_install:
   - xcodebuild -version
   - xcodebuild -showsdks
 
-script: ci/buildViaTravis.sh
+script:
+  - ci/buildViaTravis.sh
+  - sonar-scanner
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
