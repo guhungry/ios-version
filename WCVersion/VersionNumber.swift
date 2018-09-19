@@ -8,17 +8,17 @@ import WCExtensions
 
 public class VersionNumber {
     let version: String
-    let MAJOR: Int
-    let MINOR: Int
-    let PATCH: Int
+    let major: Int
+    let minor: Int
+    let patch: Int
 
     public init(_ version: String) {
         self.version = version
 
         let match = VersionNumber.PATTERN.matches(self.version).first
-        MAJOR = VersionNumber.partFor(self.version, match: match, at: 1)
-        MINOR = VersionNumber.partFor(self.version, match: match, at: 3)
-        PATCH = VersionNumber.partFor(self.version, match: match, at: 5)
+        major = VersionNumber.partFor(self.version, match: match, at: 1)
+        minor = VersionNumber.partFor(self.version, match: match, at: 3)
+        patch = VersionNumber.partFor(self.version, match: match, at: 5)
     }
 
     /////////////////
@@ -39,20 +39,24 @@ public class VersionNumber {
 ////////////////////////
 extension VersionNumber : Comparable {
     public static func < (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        guard lhs.MAJOR == rhs.MAJOR else { return lhs.MAJOR < rhs.MAJOR }
-        guard lhs.MINOR == rhs.MINOR else { return lhs.MINOR < rhs.MINOR }
+        guard lhs.major == rhs.major else { return lhs.major < rhs.major
+        }
+        guard lhs.minor == rhs.minor else { return lhs.minor < rhs.minor
+        }
         
-        return lhs.PATCH < rhs.PATCH
+        return lhs.patch < rhs.patch
     }
 
     public static func == (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        return lhs.MAJOR == rhs.MAJOR && lhs.MINOR == rhs.MINOR && lhs.PATCH == rhs.PATCH
+        return lhs.major == rhs.major && lhs.minor == rhs.minor && lhs.patch == rhs.patch
     }
 
     public static func > (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        guard lhs.MAJOR == rhs.MAJOR else { return lhs.MAJOR > rhs.MAJOR }
-        guard lhs.MINOR == rhs.MINOR else { return lhs.MINOR > rhs.MINOR }
+        guard lhs.major == rhs.major else { return lhs.major > rhs.major
+        }
+        guard lhs.minor == rhs.minor else { return lhs.minor > rhs.minor
+        }
         
-        return lhs.PATCH > rhs.PATCH
+        return lhs.patch > rhs.patch
     }
 }

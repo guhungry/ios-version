@@ -23,35 +23,35 @@ class WCVersionTests: XCTestCase {
         sut = VersionNumber("1")
         
         assertThat(sut.version, equalTo("1"))
-        assertThat(sut.MAJOR, equalTo(1))
-        assertThat(sut.MINOR, equalTo(0))
-        assertThat(sut.PATCH, equalTo(0))
+        assertThat(sut.major, equalTo(1))
+        assertThat(sut.minor, equalTo(0))
+        assertThat(sut.patch, equalTo(0))
     }
     
     func testParseVersion_WhenValueIs32_VersionShouldBe320() {
         sut = VersionNumber("3.2")
         
         assertThat(sut.version, equalTo("3.2"))
-        assertThat(sut.MAJOR, equalTo(3))
-        assertThat(sut.MINOR, equalTo(2))
-        assertThat(sut.PATCH, equalTo(0))
+        assertThat(sut.major, equalTo(3))
+        assertThat(sut.minor, equalTo(2))
+        assertThat(sut.patch, equalTo(0))
     }
     
     func testParseVersion_WhenValueIs1131_VersionShouldBe1131() {
         sut = VersionNumber("11.3.1")
         
         assertThat(sut.version, equalTo("11.3.1"))
-        assertThat(sut.MAJOR, equalTo(11))
-        assertThat(sut.MINOR, equalTo(3))
-        assertThat(sut.PATCH, equalTo(1))
+        assertThat(sut.major, equalTo(11))
+        assertThat(sut.minor, equalTo(3))
+        assertThat(sut.patch, equalTo(1))
     }
     
     func testParseVersion_WhenValueIsInvalid_VersionShouldBe000() {
         sut = VersionNumber("Invalid")
         
         assertThat(sut.version, equalTo("Invalid"))
-        assertThat(sut.MAJOR, equalTo(0))
-        assertThat(sut.MINOR, equalTo(0))
-        assertThat(sut.PATCH, equalTo(0))
+        assertThat(sut.major, equalTo(0))
+        assertThat(sut.minor, equalTo(0))
+        assertThat(sut.patch, equalTo(0))
     }
 }
