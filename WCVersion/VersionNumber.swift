@@ -15,7 +15,7 @@ public class VersionNumber {
     public init(_ version: String) {
         self.version = version
 
-        let match = VersionNumber.PATTERN.matches(self.version).first
+        let match = VersionNumber.pattern.matches(self.version).first
         major = VersionNumber.partFor(self.version, match: match, at: 1)
         minor = VersionNumber.partFor(self.version, match: match, at: 3)
         patch = VersionNumber.partFor(self.version, match: match, at: 5)
@@ -31,7 +31,7 @@ public class VersionNumber {
 
         return version[range.lowerBound..<range.upperBound].toInt(or: 0)
     }
-    private static let PATTERN = Regex("^(\\d+)(\\.(\\d+))?(\\.(\\d+))?$")
+    private static let pattern = Regex("^(\\d+)(\\.(\\d+))?(\\.(\\d+))?$")
 }
 
 ////////////////////////
