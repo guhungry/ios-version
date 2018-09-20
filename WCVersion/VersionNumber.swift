@@ -8,17 +8,17 @@ import WCExtensions
 
 public class VersionNumber {
     let version: String
-    let MAJOR: Int
-    let MINOR: Int
-    let PATCH: Int
+    let major: Int
+    let minor: Int
+    let patch: Int
 
     public init(_ version: String) {
         self.version = version
 
-        let match = PATTERN.matches(self.version).first
-        MAJOR = VersionNumber.partFor(self.version, match: match, at: 1)
-        MINOR = VersionNumber.partFor(self.version, match: match, at: 3)
-        PATCH = VersionNumber.partFor(self.version, match: match, at: 5)
+        let match = VersionNumber.pattern.matches(self.version).first
+        major = VersionNumber.partFor(self.version, match: match, at: 1)
+        minor = VersionNumber.partFor(self.version, match: match, at: 3)
+        patch = VersionNumber.partFor(self.version, match: match, at: 5)
     }
 
     /////////////////
@@ -31,28 +31,5 @@ public class VersionNumber {
 
         return version[range.lowerBound..<range.upperBound].toInt(or: 0)
     }
-    private let PATTERN = Regex("^(\\d+)(\\.(\\d+))?(\\.(\\d+))?$")
-}
-
-////////////////////////
-// Compare VersionNumber
-////////////////////////
-extension VersionNumber : Comparable {
-    public static func < (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        guard lhs.MAJOR == rhs.MAJOR else { return lhs.MAJOR < rhs.MAJOR }
-        guard lhs.MINOR == rhs.MINOR else { return lhs.MINOR < rhs.MINOR }
-        
-        return lhs.PATCH < rhs.PATCH
-    }
-
-    public static func == (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        return lhs.MAJOR == rhs.MAJOR && lhs.MINOR == rhs.MINOR && lhs.PATCH == rhs.PATCH
-    }
-
-    public static func > (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        guard lhs.MAJOR == rhs.MAJOR else { return lhs.MAJOR > rhs.MAJOR }
-        guard lhs.MINOR == rhs.MINOR else { return lhs.MINOR > rhs.MINOR }
-        
-        return lhs.PATCH > rhs.PATCH
-    }
+    private static let pattern = Regex("^(\\d+)(\\.(\\d+))?(\\.(\\d+))?$")
 }
