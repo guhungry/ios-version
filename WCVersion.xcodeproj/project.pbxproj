@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5946A63DD1B7D4F8A0121172 /* VersionNumber+Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946A1BAED5177A0479864F4 /* VersionNumber+Comparison.swift */; };
 		5B85A84B362A2530D3E217E2 /* Pods_WCVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAF7478AD1A6532F431CA78 /* Pods_WCVersion.framework */; };
 		7F70ABC3213F75BB002B725A /* WCVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70ABB9213F75BB002B725A /* WCVersion.framework */; };
 		7F70ABD4213F75F1002B725A /* VersionNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70ABD3213F75F1002B725A /* VersionNumber.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5946A1BAED5177A0479864F4 /* VersionNumber+Comparison.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VersionNumber+Comparison.swift"; sourceTree = "<group>"; };
 		7DBA23337395459525CC4740 /* Pods-WCVersion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCVersion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCVersion/Pods-WCVersion.debug.xcconfig"; sourceTree = "<group>"; };
 		7F70ABB9213F75BB002B725A /* WCVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F70ABBD213F75BB002B725A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				7F70ABD3213F75F1002B725A /* VersionNumber.swift */,
 				7F70ABBD213F75BB002B725A /* Info.plist */,
+				5946A1BAED5177A0479864F4 /* VersionNumber+Comparison.swift */,
 			);
 			path = WCVersion;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F70ABD4213F75F1002B725A /* VersionNumber.swift in Sources */,
+				5946A63DD1B7D4F8A0121172 /* VersionNumber+Comparison.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

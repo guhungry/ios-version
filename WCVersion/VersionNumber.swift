@@ -33,30 +33,3 @@ public class VersionNumber {
     }
     private static let pattern = Regex("^(\\d+)(\\.(\\d+))?(\\.(\\d+))?$")
 }
-
-////////////////////////
-// Compare VersionNumber
-////////////////////////
-extension VersionNumber : Comparable {
-    public static func < (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        guard lhs.major == rhs.major else { return lhs.major < rhs.major
-        }
-        guard lhs.minor == rhs.minor else { return lhs.minor < rhs.minor
-        }
-        
-        return lhs.patch < rhs.patch
-    }
-
-    public static func == (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        return lhs.major == rhs.major && lhs.minor == rhs.minor && lhs.patch == rhs.patch
-    }
-
-    public static func > (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
-        guard lhs.major == rhs.major else { return lhs.major > rhs.major
-        }
-        guard lhs.minor == rhs.minor else { return lhs.minor > rhs.minor
-        }
-        
-        return lhs.patch > rhs.patch
-    }
-}
