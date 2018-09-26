@@ -16,9 +16,21 @@ pod 'WCVersion', '~> 0.0.0'
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/WCVersion.svg?style=flat)](https://cocoapods.org/pods/WCVersion)
 
 ## Examples
+
+### Import
 ```swift
 import WCVersion
+```
 
+### Initialize
+```swift
+let version1 = VersionNumber("5")
+let version2 = VersionNumber("3.8")
+let version3 = VersionNumber("1.2.3")
+```
+
+### Comparing
+```swift
 VersionNumber("1.2.3") > VersionNumber("1.5.3")
 false
 
