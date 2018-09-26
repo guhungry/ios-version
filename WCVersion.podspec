@@ -9,9 +9,11 @@
 Pod::Spec.new do |s|
   s.name         = "WCVersion"
   s.version      = "0.0.5"
-  s.summary      = "Simple version number compare in MAJOR(.MINOR)?(.PATCH)? format"
+  s.summary      = "Simple version number compare in major(.minor)?(.patch)? format"
   s.description  = <<-DESC
-  Simple version number compare in MAJOR(.MINOR)?(.PATCH)? format written in swift
+Simple version number compare in major(.minor)?(.patch)? format
+
+Supports compare using ==, !=, >, >=, < and <=
                    DESC
   s.homepage     = "https://github.com/guhungry/ios-version"
 
