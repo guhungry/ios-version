@@ -6,6 +6,8 @@
 
 Simple version number compare in MAJOR(.MINOR)?(.PATCH)? format
 
+Supports compare using ==, !=, >, >=, < and <=
+
 ## Download
 Install using CocoaPods, add dependency in `Podfile`:
 ```
