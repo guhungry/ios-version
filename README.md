@@ -4,13 +4,14 @@
 [![LICENSE](https://img.shields.io/cocoapods/l/WCVersion.svg?style=flat)](https://github.com/guhungry/ios-version/blob/master/LICENSE)
 [![Platform compatible](https://img.shields.io/cocoapods/p/WCVersion.svg?style=flat)](https://cocoapods.org/pods/WCVersion)
 
-Simple version number compare in MAJOR(.MINOR)?(.PATCH)? format
+Simple version number compare in major(.minor)?(.patch)? format
 
 Supports compare using ==, !=, >, >=, < and <=
 
 ## Download
 Install using CocoaPods, add dependency in `Podfile`:
-```
+
+```ruby
 pod 'WCVersion', '~> 0.0.0'
 ```
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/WCVersion.svg?style=flat)](https://cocoapods.org/pods/WCVersion)
