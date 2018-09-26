@@ -6,12 +6,18 @@
 import Foundation
 import WCExtensions
 
+/// Represent version number in major(.minor)?(.patch)? format
+///
+///     let version1 = VersionNumber("1.2.4")
+///     let version2 = VersionNumber("2.1.5")
+///     print(version1 > version2)
 public class VersionNumber {
     let version: String
     let major: Int
     let minor: Int
     let patch: Int
 
+    /// - Parameter version: version string in major(.minor)?(.patch)? format
     public init(_ version: String) {
         self.version = version
 

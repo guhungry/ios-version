@@ -5,9 +5,7 @@
 
 import Foundation
 
-////////////////////////
-// Compare VersionNumber
-////////////////////////
+/// Add support compare VersionNumber using ==, !=, >, >=, < and <=
 extension VersionNumber : Comparable {
     public static func < (lhs: VersionNumber, rhs: VersionNumber) -> Bool {
         guard lhs.major == rhs.major else { return lhs.major < rhs.major
