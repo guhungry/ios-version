@@ -10,6 +10,6 @@ target 'WCVersion' do
   target 'WCVersionTests' do
     inherit! :search_paths
 
-    pod 'SwiftHamcrest', '~> 2.0.0'
+    pod 'SwiftHamcrest', '~> 2.1.0'
   end
 end
