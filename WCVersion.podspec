@@ -23,7 +23,7 @@ Supports compare using ==, !=, >, >=, < and <=
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/guhungry/ios-version.git", :tag => "#{s.version}" }
   s.source_files  = "WCVersion/**/*.swift"
-  s.dependency "WCExtensions", '~> 0.0.5'
+  s.dependency "WCExtensions", '~> 1.0'
 
-  s.swift_version = "4.2"
+  s.swift_version = "5.0"
 end
