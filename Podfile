@@ -5,11 +5,9 @@ target 'WCVersion' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'WCExtensions', '~> 0.0.5'
+  pod 'WCExtensions', '~> 1.0'
 
   target 'WCVersionTests' do
-    inherit! :search_paths
-
-    pod 'SwiftHamcrest', '~> 2.1.0'
+    pod 'SwiftHamcrest', '~> 2.2.1'
   end
 end
