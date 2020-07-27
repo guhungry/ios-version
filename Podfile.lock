@@ -7,7 +7,7 @@ DEPENDENCIES:
   - WCExtensions (~> 0.0.5)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - SwiftHamcrest
     - WCExtensions
 
@@ -17,4 +17,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 7890b7400c04a79f6c3cbe6f09471efa094a9b6f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.3

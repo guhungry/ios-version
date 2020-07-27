@@ -1,6 +1,7 @@
 language: objective-c
 osx_image: xcode11.6
 os: osx
+podfile: Podfile
 
 addons:
   sonarcloud:
